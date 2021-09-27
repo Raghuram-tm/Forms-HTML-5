@@ -1,17 +1,64 @@
 <!DOCTYPE html>
 <html>
     <head>
-          <meta charset="UTF-8">
-          <title>forms-html-5</title>
+        <meta charset="UTF-8">
+        <title>form in html</title>
+        <style>
+            #styling{
+                background-color: rgb(0, 255, 128);
+                width: 600px;
+                padding: 30px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
     </head>
     <body>
-     <form>
-          Username:<br>
-           <input type="text" Name:"username">
-           <br>password: <br>
-           <input type="password" name:"password">
-           <br> <br> <input type="login" value="login".
+        <h1 style="text-align:center;"><span style="color: rgb(255, 105, 113);">SIGN IN</span></h1>
+        <form id="styling">
+        <div>
+        FULL NAME:
+            <p class="input labels">
+                <input type="text" name="full-name">
+            </p>
+        </div>
+        <div>
+            SURNAME:
+           <p class="input labels"> <input type="text" name="surname">
+        </p>
+    </div>
+        <div>
+            EMAIL:
+           <P><input></P> 
+        </div>
+        <div>
+            PASSWORD:
+           <P class="input labels"><input></P> 
+        </div>
 
-    </form>
+        <div>
+            GENDER:
+            <p class="input labels">
+                 <input type="radio"name="male"value=male>
+                 male
+                <input type="radio" name="female">
+                female
+                <input type="radio" name="others">
+                others
+            </p>
+            <div>
+               <p class="input labels"> SECURITY QUESTIONS:</p>
+                <select name="security question">
+          <option value="what is the first car">what is your favorite dish</option>
+                <option value="what is your name">what is your name</option>
+                <option value="what is your favourite colour">what is your favourite colour</option>
+                </select>
+            </p>
+            </div>
+           <p class="input labels">security answer</p> 
+           <p><textarea name="" id="" cols="30" rows="10"></textarea></p>
+           <input type="checkbox" name="terms and conditions"> I agree to accept all the terms and conditions.
+           <div><input type="text" name=register value="register"></div>
+        </form>
     </body>
 </html>
